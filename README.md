@@ -1,0 +1,1 @@
+Docker image for building projects with activator (Play 2.3 framework)
