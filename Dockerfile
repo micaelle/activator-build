@@ -18,4 +18,5 @@ RUN bash -c "source ~/.bashrc"
 RUN chmod a+x /opt/activator/bin/activator
 
 # run activator firs time and cache its dependencies
-RUN cd /tmp && activator new init minimal-scala && rmdir --ignore-fail-on-non-empty /tmp/init
+RUN cd /tmp && activator new init play-scala
+RUN rmdir --ignore-fail-on-non-empty /tmp/init
