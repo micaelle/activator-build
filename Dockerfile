@@ -10,7 +10,8 @@ RUN sed -i 's/^assistive_technologies=/#&/' /etc/java-8-openjdk/accessibility.pr
 ENV SBT sbt-0.13.8
 RUN wget -q https://dl.bintray.com/sbt/debian/$SBT.deb && \
     dpkg -i $SBT.deb && rm $SBT.deb && \
-    apt-get update && apt-get install sbt
+    apt-get update && apt-get install sbt && \
+    sbt sbtVersion
 
 
 # install activator
